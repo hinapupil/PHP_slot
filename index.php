@@ -84,7 +84,6 @@
     <div class="button">
       <div class="spin">
         <button type="submit" name="spin" id="spin">SPIN</button>
-        <?php setcookie("image_rand", "image_rand2", "image_rand3", time() - 30); ?>
       </div>
       <div class="stop">
         <button type="submit" name="stop" id="stop">STOP</button>
