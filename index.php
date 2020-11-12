@@ -9,7 +9,6 @@
   <main>
     <section class="panel">
       <?php
-      $image_rand = filter_input(INPUT_COOKIE, 'image_rand');
       if(isset($_POST['spin'])) {
         $image = 'img/slot.gif';
         echo '<img src="'.$image.'" alt="">';
