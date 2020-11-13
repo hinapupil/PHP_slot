@@ -11,7 +11,6 @@
       <?php
       if(isset($_POST['spin'])) {
         $image_rand = 'img/slot.gif';
-        echo '<img src="'.$image_rand.'" alt="">';
       } else if(isset($_POST['stop'])) {
         $image_rand = array(
           'img/drink_beer.png',
@@ -25,17 +24,16 @@
           'img/tatemono_bar.png',
         );
         $image_rand = $image_rand[mt_rand(0, count($image_rand)-1)];
-        echo '<img src="'.$image_rand.'" alt="" >';
       } else {
-        echo '<img src="img/number_7.png" alt="" >';
+        $image_rand = 'img/number_7.png';
       }
+      echo '<img src="'.$image_rand.'" alt="">';
       ?>
     </section>
     <section class="panel">
       <?php
       if(isset($_POST['spin'])) {
         $image_rand2 = 'img/slot2.gif';
-        echo '<img src="'.$image_rand2.'" alt="">';
       } else if(isset($_POST['stop'])) { 
         $image_rand2 = array(
           'img/drink_beer.png',
@@ -49,17 +47,16 @@
           'img/tatemono_bar.png',
         );
         $image_rand2 = $image_rand2[mt_rand(0, count($image_rand2)-1)];
-        echo '<img src="'.$image_rand2.'" alt="">';
       } else {
-        echo '<img src="img/number_7.png" alt="" >';
+        $image_rand2 = 'img/number_7.png';
       }
+      echo '<img src="'.$image_rand2.'" alt="">';
       ?>
     </section>
     <section class="panel">
       <?php
       if(isset($_POST['spin'])) {
         $image_rand3 = 'img/slot3.gif';
-        echo '<img src="'.$image_rand3.'" alt="">';
       } else if(isset($_POST['stop'])) {
         $image_rand3 = array(
           'img/drink_beer.png',
@@ -73,10 +70,10 @@
           'img/tatemono_bar.png',
         );
         $image_rand3 = $image_rand3[mt_rand(0, count($image_rand3)-1)];
-        echo '<img src="'.$image_rand3.'" alt="">';
       } else {
-        echo '<img src="img/number_7.png" alt="" >';
+        $image_rand3 = 'img/number_7.png';
       }
+      echo '<img src="'.$image_rand3.'" alt="">';
       ?>
     </section>
   </main>
