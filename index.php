@@ -92,6 +92,8 @@
       $images = [$image_rand, $image_rand2, $image_rand3];
       if (count(array_unique($images)) == 1) {
         echo 'Congratulations!';
+      } else if (isset($_POST['spin'])) {
+        echo 'During the rotation......';
       } else {
         echo "Oh no...";
       }
